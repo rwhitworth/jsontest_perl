@@ -33,5 +33,13 @@ Access-Control-Allow-Origin is configured for '*'.
 MIME type is configured as 'application/json'.
 Callbacks are not implemented.
 
+## Todo
+- Update /md5/TEXT example
+- Remove reference to js code.  jsontest.com is offline, and this reimplimentation does not contain any understanding of a /jscode end point
+- Shorten the amount of HTML that is output for a 404 response.  Currently using Mojolicious' default response that is ~16k in size
+- Include instructions on how to run the prefork version of the server
+- Consider returning 404 to /echo and /validate instead of a 200 with a body of 'not defined'
+- Tests with JMeter (which are in progress and caused many of the todo items above)
+
 ## License
 Licensed under the MIT license.
