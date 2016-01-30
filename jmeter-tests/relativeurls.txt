@@ -1,0 +1,9 @@
+/ip,200
+/headers,200
+/failure,404
+/date,200
+/echo,200
+/validate,200
+/jscode,404
+/cookie,200
+/md5/TEST,200
