@@ -24,7 +24,7 @@ get '/ip' => sub {
 get '/headers' => sub {
   my $c = shift;
   my $text = "{\n";
-  foreach my $x (keys %{%{$c->tx->req->content->headers}{headers}})
+  foreach my $x (keys %{$c->tx->req->headers->{headers}})
   {
     if (length($text) > 2) { $text .= ",\n"; }
     $text .= '"' . $x . '": "' . ${$c->tx->req->content->headers}{headers}{$x}[0] . '"';
